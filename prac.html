@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+.center-allign{
+	text-align:center;
+}
+
+h1{
+	text-align:center;
+	font-size: 44px;
+	font-family: sans-serif;
+	color: Navy;
+    
+}
+
+.white-background{
+ 	background-color: white;
+}
+
+.centerTable { margin: 0px auto; }
+
+</style>
+<body style="background-color: SkyBlue">
+
+
+<h1>Survey Form</h1>
+
+<div class = "white-background">
+<main>
+<form >
+<table class="centerTable">
+     	<tr>
+         	<td align='right'>*Name</td>
+         	<td><input type="text" placeholder="Enter your name" required></td>
+     	</tr>
+     	<tr>
+         	<td align='right'>*Email</td>
+         	<td><input type="text" placeholder="Enter your Email" required></td>
+	</tr>
+	<tr>
+      		<td align='right'>*Age </td>
+		<td><input type="number" placeholder="Enter your Age" required></td>
+     	</tr>
+	<tr>
+        	<td align='right'>Which option best represents your current role? </td>
+      		<td><select id="roles">
+			<option value="Student">Student</option>
+  			<option value="Staff">Staff</option>
+  			<option value="Super Mario">Super Mario</option>
+  			<option value="Sonic">Sonic</option>
+  			<option value="Crash Bandicoot">Crash Bandicoot</option>
+			</select>
+		</td>
+     	</tr>
+`	<tr>
+		<td align='right' style="vertical-align: top;">*How likely are you to recommend <br>freeCodeCamp to your friend ?</td>
+		<td><label> 
+			<input type="radio" name="recommendation" required>Definitely
+		</label><br>
+		<label>
+			<input type="radio" name="recommendation" required>Maybe
+		</label><br>
+		<label>
+			<input type="radio" name="recommendation" required>Not Sure
+		</label></td>
+	</tr>
+	<tr>
+		<td align='right'>What do you like the most in FCC:</td>
+		<td> <select id="likes">
+			<option>Select an option</option>
+  			<option value="Staff">Staff</option>
+  			<option value="Super Mario">Super Mario</option>
+  			<option value="Sonic">Sonic</option>
+  			<option value="Crash Bandicoot">Crash Bandicoot</option>
+		</select></td>
+	</tr>
+	<tr>
+		<td align='right' style="vertical-align: top;">Things that should be improved in the future<br>(Check all thta apply)</td>
+		<td>
+    			<label for="front"><input id="front" type="checkbox" name="improv"> Front-end Projects</label><br>
+    			<label for="back"><input id="back" type="checkbox" name="improv"> Back-end Projects</label><br>
+   			<label for="data"><input id="data" type="checkbox" name="improv"> Data Visualization</label><br>
+	`	</td>
+	</tr>
+
+  </table>
+  <div class = "center-allign">
+	<button type="submit" name='s1' id='s1' value="submit" >Submit</button>	
+  </div>
+
+</form>
+</div>
+</div>
+</main>
+</body>
+</html>
